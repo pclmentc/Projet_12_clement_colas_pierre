@@ -151,7 +151,8 @@ nav {
     display: flex;
     justify-content: space-between;
     padding-top: 35px;
-    padding-inline: 50px;
+    padding-inline: 63px;
+    
 
     h1 {
         display: flex;
@@ -162,8 +163,7 @@ nav {
 
     ul {
         display: flex;
-        gap: 45px;
-        padding: 10px;
+        gap: 45px;        
         padding-top: 20px;
         align-items: center;
 
@@ -177,9 +177,9 @@ nav {
                 text-transform: uppercase;
                 box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
                 border: 1px solid greenyellow;
-                border-radius: 5px;
+                border-radius: 5px;                
+                background-color: rgba(128, 128, 128, 0.767);
                 padding: 10px;
-                background-color: grey;
             }
             &:hover{
                 text-decoration: underline 2px greenyellow;                
@@ -209,7 +209,8 @@ nav {
     border: 2px double;
     border-radius: 5%;
     padding: 15px;
-    background-color: grey;
+    background-image: url(./images/Background.webp);
+    background-size: cover;
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
 
     .effet {
@@ -230,11 +231,11 @@ main {
     flex-direction: column;
     align-items: center;
     margin: 20px auto;
-    width: 70%;
+    width: 90%;
     border: 1px yellow solid;
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.767);
 
 
     h2 {
