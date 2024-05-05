@@ -2,52 +2,66 @@
 <html lang="fr">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
     <meta charset="UTF-8">
-    <meta name="keywords" content="portfolio Pierre Clément-Colas, développeur junior, développement web, CV Pierre Clément-Colas">
-    <!-- Sélection pertinente de mots clés -->
-    <meta name="description" content="Pierre Clément-Colas est développeur web junior. Passionné, autonome, rigoureux, il est à l'écoute de tous vos besoins web !">
-    <!-- Ajout du contenu de la balise description-->
+    <meta name="keywords"
+        content="portfolio Pierre Clément-Colas, développeur junior, développement web, CV Pierre Clément-Colas">
+
+    <meta name="description"
+        content="Pierre Clément-Colas est développeur web junior. Passionné, autonome, rigoureux et en perpétuelle recherche d'amélioration.">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mon Portfolio PCC</title>
-    <!-- Ajout d'un favicon'-->
-    <link rel="icon" href="favicon.png" type="image/x-icon">  
-    <!-- Ajout des icônes Fontawesome-->
-    <script src="https://kit.fontawesome.com/19ca7a5a67.js" crossorigin="anonymous"></script> 
-    <!-- Inclure votre fichier CSS -->
+
+    <link rel="icon" href="favicon.png" type="image/x-icon">
+
+    <script src="https://kit.fontawesome.com/19ca7a5a67.js" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="portfolio de Pierre Clément-Colas | développeur web junior">
+    <meta property="og:description"
+        content="Porfolio de Pierre Clément-Colas. Développeur Web Junior passionné, autonome, rigoureux et en perpétuelle recherche d'amélioration.">
 </head>
 
 <body>
     <header>
-        <!-- Ajoutez de la navigation -->
+
         <nav>
             <div class="Presentation">
-                <img class="Portrait" src="./images/Portrait.png" alt="portrait">
-                <h1>Pierre Clément-Colas<br>Développeur junior.</h1>
+                <img class="Portrait" src="./images/Portrait.webp" alt="portrait de Pierre Clément-Colas">
+                <h1>Pierre Clément-Colas</h1>
+                <h2 class="effet">Développeur junior</h2>
             </div>
             <section class="Navigation">
                 <ul>
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">À propos</a></li>
-                    <li><a href="#">Contact </a></li>
+                    <li><a href="#">Projets réalisés</a></li>
+                    <li><a href="#">Compétences et outils</a></li>                    
                 </ul>
-            </section>           
+            </section>
         </nav>
     </header>
 
     <main>
-        <!-- Ajoutez du contenu principal -->        
-        <!-- <p>Voici quelques-uns de mes projets...</p> -->
+        <div class="containerApropos">
+            <h2>A Propos de moi</h2>
+        </div>
+        <div>
+            <p>
+                Passionné par l'informatique, les jeux vidéo depuis mon enfance.<br> Je me suis engagé dans une
+                reconversion dans le domaine du web en 2023.<br>
+                Actuellement en formation d'intégrateur web chez Openclassrooms qui prendra fin en juillet 2024.
+            </p>
+        </div>
     </main>
 
     <footer>
         <!-- Ajoutez mes informations de pied de page ici -->
-        <p>&copy; <span id="currentYear"></span> Mon Portfolio PCC. Tous droits réservés.</p>
+        <p>&copy; <span id="currentYear"></span> - Pierre Clément-Colas. Tous droits réservés.</p>
     </footer>
     <!-- Importez le fichier JavaScript -->
     <script src="./main.js"></script>
