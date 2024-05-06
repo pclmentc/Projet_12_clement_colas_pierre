@@ -159,13 +159,16 @@ main p {
   padding-bottom: 25px;
 }
 
-footer {
-  display: flex;
-  justify-content: center;
-  padding-top: 25px;
+footer {   
+  position: absolute;
+  bottom: 0; 
+  width: 100%; 
+  text-align: center;
+  
 }
 footer p {
   font-size: 20px;
   font-weight: 500;
   font-style: italic;
+  
 }/*# sourceMappingURL=style.css.map */
