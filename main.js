@@ -8,3 +8,5 @@
     // Insérez l'année actuelle dans l'élément
     currentYearElement.textContent = currentYear;
 
+    
+
