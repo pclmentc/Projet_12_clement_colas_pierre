@@ -248,6 +248,31 @@ main p {
   bottom: 0;
   z-index: 1;
 }
+
+.lien{  
+  width: 100%;  
+  ul{
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    padding: 15px;
+    li{
+      border: solid 1px;
+      border-radius: 15px;
+      padding: 10px;
+      background-color: #369046;
+      a{
+        text-decoration: none;
+        color: #C2F0C2;        
+        position: relative;
+        z-index: 2;
+        .fa-brands{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
 footer {
   display: flex;
   justify-content: center;
