@@ -114,8 +114,8 @@
   /* Google Fonts */
   font-family: "League Spartan", sans-serif;
   line-height: 1;
-  background-color: rgba(0, 0, 0, 0.641);
-  color: white;
+  background-color: #141A15;
+  color: #ffffff;
 }
 * ol,
 * ul {
@@ -160,13 +160,13 @@ nav ul li {
   font-size: 20px;
 }
 nav ul li a {
-  color: yellow;
+  color: #f9f9f9;
   text-decoration: none;
   text-transform: uppercase;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
-  border: 1px solid greenyellow;
+  border: 1px solid #28684A;
   border-radius: 5px;
-  background-color: rgba(128, 128, 128, 0.767);
+  background-color: #1D3A24;
   padding: 10px;
   z-index: 999;
   position: relative;
@@ -190,7 +190,7 @@ nav ul li .fa-solid {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px double;
+  border: 2px double #28684A;
   border-radius: 5%;
   padding: 15px;
   background-image: url(./images/Background.webp);
@@ -199,12 +199,12 @@ nav ul li .fa-solid {
 }
 .Presentation .effet {
   font-size: 24px;
-  color: yellow;
+  color: #C2F0C2;
 }
 .Presentation .effet:last-child:after {
   animation: blink 1.5s infinite;
   content: "junior_";
-  color: greenyellow;
+  color: #cef278;
   font-size: 24px;
 }
 
@@ -214,10 +214,10 @@ main {
   align-items: center;
   margin: 20px auto;
   width: 90%;
-  border: 1px yellow solid;
+  border: 1px #28684A;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
-  background-color: rgba(128, 128, 128, 0.767);
+  background-color: #1D3A24;
 }
 main h2 {
   font-size: 34px;
@@ -225,7 +225,7 @@ main h2 {
   -webkit-text-decoration: underline double greenyellow;
           text-decoration: underline double greenyellow;
   padding-block: 15px;
-  color: yellow;
+  color: #C2F0C2;
 }
 main p {
   font-size: 28px;
@@ -234,7 +234,7 @@ main p {
   margin: auto;
   font-family: "Courier New", Courier, monospace;
   padding: 5px;
-  padding-bottom: 25px;
+  padding-bottom: 45px;
 }
 .particles-js-canvas-el{
   position: absolute;
