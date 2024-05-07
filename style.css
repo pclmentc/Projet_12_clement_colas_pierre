@@ -168,6 +168,8 @@ nav ul li a {
   border-radius: 5px;
   background-color: rgba(128, 128, 128, 0.767);
   padding: 10px;
+  z-index: 999;
+  position: relative;
 }
 nav ul li:hover {
   -webkit-text-decoration: underline 2px greenyellow;
@@ -234,7 +236,16 @@ main p {
   padding: 5px;
   padding-bottom: 25px;
 }
-
+.particles-js-canvas-el{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
 footer {
   display: flex;
   justify-content: center;
