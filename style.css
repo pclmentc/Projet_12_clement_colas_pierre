@@ -143,9 +143,7 @@ main h2 {
   text-transform: uppercase;
   -webkit-text-decoration: underline double greenyellow;
           text-decoration: underline double greenyellow;
-  padding-block: 15px;
   color: white;
-  text-align: center;
 }
 main .containerApropos {
   border: 2px solid #cef278;
@@ -161,7 +159,6 @@ main .lien {
 }
 main .Projets {
   display: flex;
-  flex-direction: column;
   gap: 20px;
   text-align: center;
 }
@@ -169,18 +166,26 @@ main .projet-1,
 main .projet-2,
 main .projet-3 {
   display: flex;
-  gap: 15px;
-  justify-content: flex-start;
+  flex-direction: column;
+  gap: 5px;
   align-items: center;
   border: solid 1px greenyellow;
-  border-radius: 5px;
+  border-radius: 15px;
   padding: 10px;
+  background-color: #1D3A24;
+  transition: 0.6s;
 }
 main .projet-1 h3,
 main .projet-2 h3,
 main .projet-3 h3 {
   font-size: 25px;
   text-transform: capitalize;
+}
+main .projet-1:hover,
+main .projet-2:hover,
+main .projet-3:hover {
+  transition: 0.4s;
+  transform: scale(1.05);
 }
 main p {
   font-size: 28px;
@@ -203,6 +208,9 @@ main p {
   padding: 10px;
   background-color: #369046;
 }
+.lien ul li:hover {
+  background-color: #1D3A24;
+}
 .lien ul li a {
   text-decoration: none;
   color: white;
@@ -210,7 +218,7 @@ main p {
   z-index: 2;
 }
 .lien ul li a .fa-brands {
-  font-size: 25px;
+  font-size: 35px;
 }
 
 #particles-js {
@@ -233,4 +241,34 @@ footer p {
   font-size: 20px;
   font-weight: 500;
   font-style: italic;
+}
+
+.imgProjet {
+  width: 450px;
+  height: 240px;
+}
+
+.skills {
+  display: flex;
+  gap: 10px;
+}
+
+.flex-item {
+  display: flex;
+  border: 1px solid greenyellow;
+  border-radius: 15px;
+  background-color: #1D3A24;
+}
+.flex-item .fa-brands {
+  font-size: 35px;
+  margin: auto;
+  padding: 5px;
+}
+.flex-item p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 10px;
+}
+
+.flex-item:hover {
+  background-color: #369046;
 }/*# sourceMappingURL=style.css.map */
