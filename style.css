@@ -115,7 +115,7 @@
   font-family: "League Spartan", sans-serif;
   line-height: 1;
   background-color: #141A15;
-  color: #ffffff;
+  color: white;
 }
 * ol,
 * ul {
@@ -162,11 +162,11 @@ nav ul li {
   font-size: 20px;
 }
 nav ul li a {
-  color: #f9f9f9;
+  color: yellow;
   text-decoration: none;
   text-transform: uppercase;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
-  border: 1px solid #28684A;
+  border: 1px solid #cef278;
   border-radius: 5px;
   background-color: #1D3A24;
   padding: 10px;
@@ -174,8 +174,8 @@ nav ul li a {
   position: relative;
 }
 nav ul li:hover {
-  -webkit-text-decoration: underline 2px greenyellow;
-          text-decoration: underline 2px greenyellow;
+  -webkit-text-decoration: underline double 2px #28684A;
+          text-decoration: underline double 2px #28684A;
 }
 nav ul li .fa-solid {
   font-size: 10px;
@@ -192,7 +192,7 @@ nav ul li .fa-solid {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px double #28684A;
+  border: 2px double #cef278;
   border-radius: 5%;
   padding: 15px;
   background-image: url(./images/Background.webp);
@@ -201,12 +201,12 @@ nav ul li .fa-solid {
 }
 .Presentation .effet {
   font-size: 24px;
-  color: #C2F0C2;
+  color: yellow;
 }
 .Presentation .effet:last-child:after {
   animation: blink 1.5s infinite;
   content: "junior_";
-  color: #cef278;
+  color: greenyellow;
   font-size: 24px;
 }
 
@@ -216,7 +216,7 @@ main {
   align-items: center;
   margin: 20px auto;
   width: 90%;
-  border: 1px #28684A;
+  border: 2px solid #cef278;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background-color: #1D3A24;
@@ -227,7 +227,7 @@ main h2 {
   -webkit-text-decoration: underline double greenyellow;
           text-decoration: underline double greenyellow;
   padding-block: 15px;
-  color: #C2F0C2;
+  color: yellow;
 }
 main p {
   font-size: 28px;
@@ -238,7 +238,33 @@ main p {
   padding: 5px;
   padding-bottom: 45px;
 }
-.particles-js-canvas-el{
+
+.lien {
+  width: 100%;
+}
+.lien ul {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  padding: 15px;
+}
+.lien ul li {
+  border: solid 1px yellow;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: #369046;
+}
+.lien ul li a {
+  text-decoration: none;
+  color: white;
+  position: relative;
+  z-index: 2;
+}
+.lien ul li a .fa-brands {
+  font-size: 25px;
+}
+
+.particles-js-canvas-el {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -249,30 +275,6 @@ main p {
   z-index: 1;
 }
 
-.lien{  
-  width: 100%;  
-  ul{
-    display: flex;
-    gap: 15px;
-    justify-content: center;
-    padding: 15px;
-    li{
-      border: solid 1px;
-      border-radius: 15px;
-      padding: 10px;
-      background-color: #215b2c;
-      a{
-        text-decoration: none;
-        color: #ffff;        
-        position: relative;
-        z-index: 2;
-        .fa-brands{
-          font-size: 25px;
-        }
-      }
-    }
-  }
-}
 footer {
   display: flex;
   justify-content: center;
