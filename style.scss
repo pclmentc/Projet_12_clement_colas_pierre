@@ -194,9 +194,13 @@ main {
     .projet-2,
     .projet-3{
         display: flex;
-        gap: 10px;
+        gap: 15px;
         justify-content:flex-start;
-        align-items: center;        
+        align-items: center; 
+        border: solid 1px greenyellow; 
+        border-radius: 5px;  
+        padding: 10px; 
+          
 
         h3{
             font-size: 25px;
@@ -240,7 +244,7 @@ main {
     }
   }
 
-  .particles-js-canvas-el{
+  #particles-js{
     position: absolute;
     width: 100%;
     height: 100%;
