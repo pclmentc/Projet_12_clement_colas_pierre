@@ -4,6 +4,15 @@
     opacity: 0;
   }
 }
+.date {
+  border: 1px solid;
+  border-radius: 15px;
+  padding-block: 5px;
+  padding-inline: 10px;
+  text-align: center;
+  font-size: 15px;
+}
+
 /* Reset */
 * {
   /* Réinitialisation du rôle d'affichage HTML5 pour les anciens navigateurs */
@@ -55,11 +64,8 @@
 
 nav {
   position: relative;
-  display: flex;
-  justify-content: space-between;
   padding-block: 35px;
   padding-inline: 63px;
-  width: 96.5%;
   margin: auto;
 }
 nav h1 {
@@ -78,7 +84,7 @@ nav ul li {
   font-size: 20px;
 }
 nav ul li a {
-  color: yellow;
+  color: white;
   text-decoration: none;
   text-transform: uppercase;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
@@ -100,7 +106,7 @@ nav ul li .fa-solid {
 }
 
 .Portrait {
-  width: 165px;
+  width: 265px;
 }
 
 .Presentation {
@@ -108,22 +114,21 @@ nav ul li .fa-solid {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px double #cef278;
-  border-radius: 5%;
   padding: 15px;
-  background-image: url(./images/Background.webp);
-  background-size: cover;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
 }
 .Presentation .effet {
   font-size: 24px;
-  color: yellow;
+  color: green;
 }
 .Presentation .effet:last-child:after {
-  animation: blink 1.5s infinite;
-  content: "junior_";
-  color: greenyellow;
+  animation: blink 1s infinite;
+  content: "_";
   font-size: 24px;
+}
+
+.Navigation {
+  display: flex;
+  justify-content: center;
 }
 
 main {
@@ -131,33 +136,58 @@ main {
   flex-direction: column;
   align-items: center;
   margin: 20px auto;
-  width: 90%;
+  gap: 35px;
+}
+main h2 {
+  font-size: 32px;
+  text-transform: uppercase;
+  -webkit-text-decoration: underline double greenyellow;
+          text-decoration: underline double greenyellow;
+  padding-block: 15px;
+  color: white;
+  text-align: center;
+}
+main .containerApropos {
   border: 2px solid #cef278;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background-color: #1D3A24;
 }
-main h2 {
-  font-size: 34px;
-  text-transform: uppercase;
-  -webkit-text-decoration: underline double greenyellow;
-          text-decoration: underline double greenyellow;
-  padding-block: 15px;
-  color: yellow;
+main .lien {
+  border: 2px solid #cef278;
+  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  background-color: #1D3A24;
+}
+main .Projets {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: center;
+}
+main .projet-1,
+main .projet-2,
+main .projet-3 {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+  align-items: center;
+}
+main .projet-1 h3,
+main .projet-2 h3,
+main .projet-3 h3 {
+  font-size: 25px;
+  text-transform: capitalize;
 }
 main p {
   font-size: 28px;
   text-align: left;
-  width: 75%;
   margin: auto;
   font-family: "Courier New", Courier, monospace;
   padding: 5px;
   padding-bottom: 45px;
 }
 
-.lien {
-  width: 100%;
-}
 .lien ul {
   display: flex;
   gap: 15px;
@@ -165,7 +195,7 @@ main p {
   padding: 15px;
 }
 .lien ul li {
-  border: solid 1px yellow;
+  border: solid 1px white;
   border-radius: 15px;
   padding: 10px;
   background-color: #369046;

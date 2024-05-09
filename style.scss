@@ -1,9 +1,21 @@
 $main-text-color: white;
+$background-color: #141A15;
+$title-color:white;
 
 @keyframes blink {
     50% {
         opacity: 0;
     }
+}
+.date{
+    border: 1px solid;
+    border-radius: 15px;
+    padding-block: 5px;
+    padding-inline: 10px;
+    text-align: center;
+    font-size: 15px;
+    
+    
 }
 
 /* Reset */
@@ -33,7 +45,7 @@ $main-text-color: white;
         /* Google Fonts */
         font-family: "League Spartan", sans-serif;
         line-height: 1;
-        background-color: #141A15;        
+        background-color: $background-color;        
         color: $main-text-color;
     }
 
@@ -62,12 +74,9 @@ $main-text-color: white;
 }
 
 nav {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
+    position: relative;    
     padding-block: 35px;
-    padding-inline: 63px;
-    width: 96.5%;
+    padding-inline: 63px;    
     margin: auto;
     
 
@@ -89,7 +98,7 @@ nav {
             font-size: 20px;
 
             a {
-                color: yellow;
+                color: $title-color;
                 text-decoration: none;
                 text-transform: uppercase;
                 box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
@@ -115,58 +124,90 @@ nav {
 }
 
 .Portrait {
-    width: 165px;
+    width: 265px;
 }
 
 .Presentation {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border: 2px double #cef278;
-    border-radius: 5%;
-    padding: 15px;
-    background-image: url(./images/Background.webp);
-    background-size: cover;
-    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    align-items: center;    
+    padding: 15px;  
+    
+   
 
     .effet {
         font-size: 24px;
-        color: yellow;
+        color: green;
+        
     }
 
     .effet:last-child:after {
-        animation: blink 1.5s infinite;
-        content: "junior_";
-        color: greenyellow;
+        animation: blink 1s infinite;
+        content: "_";        
         font-size: 24px;
     }
+}
+.Navigation{
+    display: flex;
+    justify-content: center;
 }
 
 main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px auto;
-    width: 90%;
+    margin: 20px auto;    
+    gap: 35px;
+    h2{
+        font-size: 32px;
+        text-transform: uppercase;
+        text-decoration: underline double greenyellow;          
+        padding-block: 15px;
+        color: $title-color;
+        text-align: center;          
+            
+        
+    }
+    
+    .containerApropos{
     border: 2px solid #cef278;
     box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
     border-radius: 15px;
-    background-color: #1D3A24;
+    background-color: #1D3A24;        
 
-
-    h2 {
-        font-size: 34px;
-        text-transform: uppercase;
-        text-decoration: underline double greenyellow;
-        padding-block: 15px;
-        color: yellow;
     }
+    .lien{
+        border: 2px solid #cef278;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background-color: #1D3A24;
+    
+    }
+    .Projets{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;        
+        text-align: center;
+    }
+    .projet-1,
+    .projet-2,
+    .projet-3{
+        display: flex;
+        gap: 10px;
+        justify-content:flex-start;
+        align-items: center;        
+
+        h3{
+            font-size: 25px;
+            text-transform:capitalize;
+        }
+    }
+    
 
     p {
         font-size: 28px;
-        text-align: left;
-        width: 75%;
+        text-align: left;        
         margin: auto;
         font-family: 'Courier New', Courier, monospace;
         padding: 5px;
@@ -175,14 +216,14 @@ main {
 
 }
 .lien{  
-    width: 100%;  
+      
     ul{
       display: flex;
       gap: 15px;
       justify-content: center;
       padding: 15px;
       li{
-        border: solid 1px yellow;
+        border: solid 1px $title-color;
         border-radius: 15px;
         padding: 10px;
         background-color: #369046;
