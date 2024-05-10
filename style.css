@@ -127,6 +127,7 @@ nav ul li .fa-solid {
 .Navigation {
   display: flex;
   justify-content: center;
+  padding: 35px;
 }
 
 main {
