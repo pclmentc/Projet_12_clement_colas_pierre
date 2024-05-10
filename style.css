@@ -260,6 +260,11 @@ footer p {
   font-weight: 500;
   font-style: italic;
 }
+@media only screen and (max-width: 458px) {
+  footer p {
+    font-size: 100%;
+  }
+}
 
 .imgProjet {
   width: 450px;
