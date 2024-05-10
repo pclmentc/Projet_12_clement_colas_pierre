@@ -30,8 +30,8 @@
 
 <body>
     <div id="particles-js"></div>
-    <script type= "text/JavaScript" src="./particles.min.js"></script>
-    <script type= "text/JavaScript" src="./app.js"></script>
+    <script type="text/JavaScript" src="./particles.min.js"></script>
+    <script type="text/JavaScript" src="./app.js"></script>
 
     <header>
 
@@ -43,95 +43,109 @@
             </div>
             <section class="Navigation">
                 <ul>
-                    <li><a href="#" title="Projets">Projets réalisés</a></li>
-                    <li><a href="#"title="Skills">Compétences et outils</a></li>                    
+                    <li><a href="#Projets" title="Projets">Mes projets </a></li>
+                    <li><a href="#Skills" title="Skills">Mes compétences</a></li>
                 </ul>
             </section>
         </nav>
+        
     </header>
 
     <main>
-        <h2>A Propos de moi</h2>
-        <section class="containerApropos">                    
-        <div>
-            <p>
-                Passionné par l'informatique, les jeux vidéo depuis mon enfance,<br> je me suis engagé dans une
-                reconversion dans le domaine du web en 2023.<br>
-                Actuellement en formation d'intégrateur web chez Openclassrooms qui prendra fin en juillet 2024.
-            </p>
+        <div class="categories">
+            <h2>A Propos de moi</h2>
+            <section class="containerApropos">
+                <div>
+                    <p class="presentation">
+                        Passionné par l'informatique, les jeux vidéo depuis mon enfance,<br> je me suis engagé dans une
+                        reconversion dans le domaine du web en 2023.<br>
+                        Actuellement en formation d'intégrateur web chez Openclassrooms qui prendra fin en juillet 2024.
+                    </p>
+                </div>
+            </section>
         </div>
-    </section> 
-        <h2>Liens utiles</h2>     
+        
+        <div class="categories">
+            <h2>Liens utiles</h2>
 
-        <section class="lien">
-            
-            <ul>
-                <li><a href="https://github.com/dashboard" title="GitHub"><i class="fa-brands fa-github"></i></a></li> 
+            <section class="lien">
 
-                <li><a href="https://www.linkedin.com/in/pierre-cl%C3%A9ment-colas-132706288/" title="Linkedin"><i class="fa-brands fa-linkedin"></i></a></li> 
-                
-                <li><a href="mailto:pclmentc@gmail.com" title="Gmail"><i class="fa-brands fa-google"></i></a>
-                </li>
-                                               
-                
-            </ul>
-        </section>
-        <h2>Mes Projets</h2>    
-        <section class="Projets">
-            
-            <div class="projet-1">
-                <h3>Booki</h3>
-                <span class="date">2023</span>
-                <img class="imgProjet" src="./images/booki.png" alt="Illustration de mon projet Booki">
+                <ul>
+                    <li><a href="https://github.com/dashboard" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                    </li>
 
-            </div>
-            <div class="projet-2">
-                <h3>Kasa</h3>
-                <span class="date">2023</span>
-                <img class="imgProjet" src="./images/kasa.png" alt="Illustration de mon projet Kasa">
+                    <li><a href="https://www.linkedin.com/in/pierre-cl%C3%A9ment-colas-132706288/" title="Linkedin"><i
+                                class="fa-brands fa-linkedin"></i></a></li>
 
-            </div>
-            <div class="projet-3">
-                <h3>724events</h3>
-                <span class="date">2023</span>
-                <img class="imgProjet" src="./images/events.png" alt="Illustration de mon projet 724events">
-            </div>
+                    <li><a href="mailto:pclmentc@gmail.com" title="Gmail"><i class="fa-brands fa-google"></i></a>
+                    </li>
 
-        </section>
-        <h2>Mes compétences</h2> 
-        <section class="skills">
 
-          <div class="flex-item">
-            <i class="fa-brands fa-vuejs fa-fade"></i>
-            <p>Vue.JS</p>
-          </div>
-           
-          <div class="flex-item">
-            <i class="fa-brands fa-sass fa-fade"></i>
-            <p>Sass</p>
-          </div> 
+                </ul>
+            </section>
+        </div>
+        <div class="categories">
+            <h2>Mes Projets</h2>
+            <section class="Projets" id="Projets">
 
-          <div class="flex-item">
-            <i class="fa-brands fa-figma fa-fade"></i>
-            <p>Figma</p>
-          </div> 
+                <div class="projet-1">
+                    <h3>Booki</h3>
+                    <span class="date">2023</span>
+                    <img class="imgProjet" src="./images/booki.png" alt="Illustration de mon projet Booki">
 
-          <div class="flex-item">  
-            <i class="fa-brands fa-git-alt fa-fade"></i>
-            <p>Git</p>        
-          </div> 
-          <!-- <div class="flex-item"></div>  -->
-            
-          
-        </section>
+                </div>
+                <div class="projet-2">
+                    <h3>Kasa</h3>
+                    <span class="date">2023</span>
+                    <img class="imgProjet" src="./images/kasa.png" alt="Illustration de mon projet Kasa">
+
+                </div>
+                <div class="projet-3">
+                    <h3>724events</h3>
+                    <span class="date">2023</span>
+                    <img class="imgProjet" src="./images/events.png" alt="Illustration de mon projet 724events">
+                </div>
+
+            </section>
+        </div>
+        <div class="categories">
+            <h2>Mes compétences</h2>
+            <section class="skills" id="Skills">
+
+                <div class="flex-item">
+                    <i class="fa-brands fa-vuejs fa-fade"></i>
+                    <h3>Vue.JS</h3>
+                </div>
+
+                <div class="flex-item">
+                    <i class="fa-brands fa-sass fa-fade"></i>
+                    <h3>Sass</h3>
+                </div>
+
+                <div class="flex-item">
+                    <i class="fa-brands fa-figma fa-fade"></i>
+                    <h3>Figma</h3>
+                </div>
+
+                <div class="flex-item">
+                    <i class="fa-brands fa-git-alt fa-fade"></i>
+                    <h3>Git</h3>
+                </div>
+                <!-- <div class="flex-item"></div>  -->
+
+
+            </section>
+        </div>
     </main>
+    <hr>
 
     <footer>
-        
+
         <p>&copy; <span id="currentYear"></span> - Pierre Clément-Colas. Tous droits réservés.</p>
     </footer>
     <!-- Importez le fichier JavaScript -->
     <script src="./main.js"></script>
 
 </body>
+
 </html>

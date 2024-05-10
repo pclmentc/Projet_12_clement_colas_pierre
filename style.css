@@ -64,32 +64,30 @@
 
 nav {
   position: relative;
-  padding-block: 35px;
-  padding-inline: 63px;
   margin: auto;
 }
 nav h1 {
   display: flex;
   font-size: 28px;
-  padding-top: 5px;
+  padding-top: 25px;
   text-align: center;
 }
 nav ul {
   display: flex;
-  gap: 45px;
-  padding-top: 20px;
-  align-items: center;
+  padding-top: 15px;
+  gap: 15px;
+  margin: auto;
 }
 nav ul li {
   font-size: 20px;
+  text-align: center;
 }
 nav ul li a {
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
   border: 1px solid #cef278;
-  border-radius: 5px;
+  border-radius: 10px;
   background-color: #1D3A24;
   padding: 10px;
   z-index: 999;
@@ -106,7 +104,7 @@ nav ul li .fa-solid {
 }
 
 .Portrait {
-  width: 265px;
+  width: 365px;
 }
 
 .Presentation {
@@ -114,7 +112,7 @@ nav ul li .fa-solid {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 15px;
+  padding: 35px;
 }
 .Presentation .effet {
   font-size: 24px;
@@ -139,21 +137,32 @@ main {
   gap: 35px;
 }
 main h2 {
-  font-size: 32px;
+  font-size: 34px;
   text-transform: uppercase;
   -webkit-text-decoration: underline double greenyellow;
           text-decoration: underline double greenyellow;
   color: white;
+}
+main .categories {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
 }
 main .containerApropos {
   border: 2px solid #cef278;
   box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background-color: #1D3A24;
+  padding: 15px;
+  width: 70%;
+}
+main .containerApropos .presentation {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
 }
 main .lien {
   border: 2px solid #cef278;
-  box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   background-color: #1D3A24;
 }
@@ -178,22 +187,16 @@ main .projet-3 {
 main .projet-1 h3,
 main .projet-2 h3,
 main .projet-3 h3 {
-  font-size: 25px;
+  font-size: 35px;
   text-transform: capitalize;
+  margin: auto;
+  padding: 5px;
 }
 main .projet-1:hover,
 main .projet-2:hover,
 main .projet-3:hover {
   transition: 0.4s;
   transform: scale(1.05);
-}
-main p {
-  font-size: 28px;
-  text-align: left;
-  margin: auto;
-  font-family: "Courier New", Courier, monospace;
-  padding: 5px;
-  padding-bottom: 45px;
 }
 
 .lien ul {
@@ -222,20 +225,17 @@ main p {
 }
 
 #particles-js {
-  position: absolute;
+  position: fixed;
   width: 100%;
   height: 100%;
-  top: 0;
-  right: 0;
-  left: 0;
-  bottom: 0;
   z-index: 1;
 }
 
 footer {
   display: flex;
   justify-content: center;
-  padding-top: 25px;
+  padding-block: 55px;
+  margin: auto;
 }
 footer p {
   font-size: 20px;
@@ -258,6 +258,8 @@ footer p {
   border: 1px solid greenyellow;
   border-radius: 15px;
   background-color: #1D3A24;
+  width: 155px;
+  z-index: 2;
 }
 .flex-item .fa-brands {
   font-size: 35px;
@@ -267,6 +269,13 @@ footer p {
 .flex-item p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding: 10px;
+}
+.flex-item h3 {
+  font-size: 25px;
+  text-transform: capitalize;
+  margin: auto;
+  font-family: "Courier New", Courier, monospace;
+  padding: 15px;
 }
 
 .flex-item:hover {
