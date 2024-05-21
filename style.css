@@ -153,7 +153,7 @@ main h2 {
 main .categories {
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 25px;
   align-items: center;
 }
 main .containerApropos {
@@ -251,9 +251,11 @@ main .projet-3:hover {
 
 footer {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   padding-block: 55px;
   margin: auto;
+  gap: 15px;
 }
 footer p {
   font-size: 20px;
@@ -264,6 +266,9 @@ footer p {
   footer p {
     font-size: 100%;
   }
+}
+footer .perso {
+  width: 155px;
 }
 
 .imgProjet {
@@ -280,6 +285,7 @@ footer p {
 .skills {
   display: flex;
   gap: 10px;
+  padding: 25px;
 }
 @media only screen and (max-width: 652px) {
   .skills {
@@ -301,6 +307,7 @@ footer p {
   font-size: 35px;
   margin: auto;
   padding: 5px;
+  color: white;
 }
 .flex-item p {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
