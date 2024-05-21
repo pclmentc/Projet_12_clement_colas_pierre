@@ -246,7 +246,7 @@ main .projet-3:hover {
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: -1;
 }
 
 footer {
@@ -323,4 +323,12 @@ footer .perso {
 
 .flex-item:hover {
   background-color: #369046;
+}
+
+.techno {
+  display: flex;
+  gap: 10px;
+  border: 1px solid greenyellow;
+  border-radius: 5px;
+  padding: 5px;
 }/*# sourceMappingURL=style.css.map */
