@@ -152,6 +152,7 @@ main h2 {
   -webkit-text-decoration: underline double greenyellow;
           text-decoration: underline double greenyellow;
   color: white;
+  display: flex;
 }
 main .categories {
   display: flex;
