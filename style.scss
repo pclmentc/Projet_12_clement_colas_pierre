@@ -13,7 +13,10 @@ $title-color:white;
     padding-block: 5px;
     padding-inline: 10px;
     text-align: center;
-    font-size: 15px;
+    font-size: 25px;
+    position: relative;
+    top: -3px;
+    right: -10px;
     
     
 }
@@ -93,8 +96,8 @@ nav {
         gap: 15px;
         margin: auto;
         @media only screen and (max-width: 444px) {
-           gap: 25px; 
-           flex-direction: column;        
+        gap: 25px; 
+        flex-direction: column;        
                     
         } 
         
@@ -114,7 +117,7 @@ nav {
                 background-color: #1D3A24;
                 padding: 10px;
                 z-index: 999;
-                position: relative;               
+                position: relative;           
                                
                 
             }
@@ -141,7 +144,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;    
-    padding: 35px;     
+    padding: 35px;    
     
    
 
@@ -209,7 +212,7 @@ main {
     }
     .Projets{
         display: flex;        
-        gap: 5px;        
+        gap: 30px;        
         text-align: center;
         @media only screen and (max-width: 1423px) {
             flex-direction: column;
@@ -223,20 +226,24 @@ main {
     .projet-3{
         display: flex;
         flex-direction: column;
-        gap: 5px;        
+        gap: 2px;        
         align-items: center; 
         border: solid 1px greenyellow; 
         border-radius: 15px;  
         padding: 10px;
         background-color: #1D3A24;
-        transition: 0.6s;       
+        transition: 0.6s;
+        width: 570px; 
+        @media only screen and (max-width: 1423px) {
+            width: 100%;
+          }      
         
           
 
         h3{
         font-size: 35px;
-        text-transform:capitalize;                    
-        margin: auto;        
+        text-transform:capitalize;                 
+                
         padding: 5px;
         }
         &:hover{
@@ -307,8 +314,9 @@ footer {
 
 }
 .imgProjet{    
-    width: 450px;
-    height: 240px;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
     @media only screen and (max-width: 652px) {
         width: 100%;
         height: 100%;
@@ -364,6 +372,11 @@ footer {
     display: flex;
     gap: 10px;
     border: 1px solid greenyellow;
-    border-radius: 5px;
+    border-radius: 8px;
     padding: 5px;
+    margin: 5px;
+    background-color: #215E30;
+}
+.contenu{
+    text-align: left;
 }
