@@ -1,13 +1,90 @@
+// Variables
 $main-text-color: white;
 $background-color: #141A15;
 $title-color: white;
+$accent-color: #cef278;
+$accent-color-2: #28684A;
+$accent-color-3: #1D3A24;
+$accent-color-4: #369046;
+$accent-color-5: #215E30;
 
+// Mixins
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin media-query($breakpoint) {
+    @media only screen and (max-width: $breakpoint) {
+        @content;
+    }
+}
+
+// Animations
 @keyframes blink {
     50% {
         opacity: 0;
     }
 }
 
+// Reset
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+
+    // Reset HTML5 display roles for older browsers
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+        display: block;
+    }
+}
+
+body {
+    font-family: "League Spartan", sans-serif;
+    line-height: 1;
+    background-color: $background-color;
+    color: $main-text-color;
+    width: 100%;
+    margin: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+
+    &:before,
+    &:after {
+        content: '';
+        content: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+// Utility Classes
 .date {
     border: 1px solid;
     border-radius: 15px;
@@ -18,158 +95,12 @@ $title-color: white;
     position: relative;
     top: -3px;
     right: -10px;
-
-
 }
 
-/* Reset */
-* {
-
-    * html,
-    * body,
-    * div,
-    * span,
-    * applet,
-    * object,
-    * iframe,
-    * h1,
-    * h2,
-    * h3,
-    * h4,
-    * h5,
-    * h6,
-    * p,
-    * blockquote,
-    * pre,
-    * a,
-    * abbr,
-    * acronym,
-    * address,
-    * big,
-    * cite,
-    * code,
-    * del,
-    * dfn,
-    * em,
-    * img,
-    * ins,
-    * kbd,
-    * q,
-    * s,
-    * samp,
-    * small,
-    * strike,
-    * strong,
-    * sub,
-    * sup,
-    * tt,
-    * var,
-    * b,
-    * u,
-    * i,
-    * center,
-    * dl,
-    * dt,
-    * dd,
-    * ol,
-    * ul,
-    * li,
-    * fieldset,
-    * form,
-    * label,
-    * legend,
-    * table,
-    * caption,
-    * tbody,
-    * tfoot,
-    * thead,
-    * tr,
-    * th,
-    * td,
-    * article,
-    * aside,
-    * canvas,
-    * details,
-    * embed,
-    * figure,
-    * figcaption,
-    * footer,
-    * header,
-    * hgroup,
-    * menu,
-    * nav,
-    * output,
-    * ruby,
-    * section,
-    * summary,
-    * time,
-    * mark,
-    * audio,
-    * video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-        box-sizing: border-box;
-    }
-
-    /* Réinitialisation du rôle d'affichage HTML5 pour les anciens navigateurs */
-    * article,
-    * aside,
-    * details,
-    * figcaption,
-    * figure,
-    * footer,
-    * header,
-    * hgroup,
-    * menu,
-    * nav,
-    * section {
-        display: block;
-    }
-
-    body {
-        /* Google Fonts */
-        font-family: "League Spartan", sans-serif;
-        line-height: 1;
-        background-color: $background-color;
-        color: $main-text-color;
-        width: 100%;
-        margin: 0;
-    }
-
-    ol,
-    ul {
-        list-style: none;
-    }
-
-    blockquote,
-    q {
-        quotes: none;
-    }
-
-    blockquote:before,
-    blockquote:after,
-    q:before,
-    q:after {
-        content: '';
-        content: none;
-    }
-
-    table {
-        border-collapse: collapse;
-        border-spacing: 0;
-    }
-}
-
+// Navigation
 nav {
     position: relative;
     margin: auto;
-
-
-
 
     h1 {
         display: flex;
@@ -184,79 +115,68 @@ nav {
         gap: 15px;
         margin: auto;
 
-        @media only screen and (max-width: 444px) {
+        @include media-query(444px) {
             gap: 25px;
             flex-direction: column;
-
         }
-
 
         li {
             font-size: 20px;
             text-align: center;
 
-
-
             a {
                 color: $title-color;
                 text-decoration: none;
                 text-transform: uppercase;
-                border: 1px solid #cef278;
+                border: 1px solid $accent-color;
                 border-radius: 10px;
-                background-color: #1D3A24;
+                background-color: $accent-color-3;
                 padding: 10px;
                 z-index: 999;
                 position: relative;
-
-
             }
 
             &:hover {
-                text-decoration: underline double 2px #28684A;
+                text-decoration: underline double 2px $accent-color-2;
             }
 
             .fa-solid {
                 font-size: 10px;
                 align-items: center;
                 justify-content: center;
-
             }
         }
     }
 }
 
+// Presentation
 .Portrait {
     width: 365px;
 }
 
 .Presentation {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 35px;
-
-
 
     .effet {
         font-size: 24px;
         color: green;
 
-    }
-
-    .effet:last-child:after {
-        animation: blink 1s infinite;
-        content: "_";
-        font-size: 24px;
+        &:last-child:after {
+            animation: blink 1s infinite;
+            content: "_";
+            font-size: 24px;
+        }
     }
 }
 
 .Navigation {
-    display: flex;
-    justify-content: center;
+    @include flex-center;
     padding: 35px;
 }
 
+// Main Content
 main {
     display: flex;
     flex-direction: column;
@@ -270,8 +190,6 @@ main {
         text-decoration: underline double greenyellow;
         color: $title-color;
         display: flex;
-
-
     }
 
     .categories {
@@ -282,30 +200,27 @@ main {
     }
 
     .containerApropos {
-        border: 2px solid #cef278;
+        border: 2px solid $accent-color;
         box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.5);
         border-radius: 15px;
-        background-color: #1D3A24;
+        background-color: $accent-color-3;
         padding: 15px;
         width: 70%;
 
-        @media only screen and (max-width: 418px) {
+        @include media-query(418px) {
             width: 100%;
-
         }
 
         .presentation {
             font-size: 30px;
             font-family: 'Courier New', Courier, monospace;
         }
-
     }
 
     .lien {
-        border: 2px solid #cef278;
+        border: 2px solid $accent-color;
         border-radius: 15px;
-        background-color: #1D3A24;
-
+        background-color: $accent-color-3;
     }
 
     .Projets {
@@ -315,11 +230,11 @@ main {
         max-width: 1440px;
         width: 98%;
 
-        @media only screen and (max-width: 1423px) {
+        @include media-query(1423px) {
             flex-direction: column;
-            gap: 10px;
+            width: 90%;            
+            gap: 25px;
         }
-
     }
 
     .projet-1,
@@ -332,20 +247,17 @@ main {
         border: solid 1px greenyellow;
         border-radius: 15px;
         padding: 10px;
-        background-color: #1D3A24;
+        background-color: $accent-color-3;
         transition: 0.6s;
         width: 570px;
 
-        @media only screen and (max-width: 1423px) {
+        @include media-query(1423px) {
             width: 100%;
         }
-
-
 
         h3 {
             font-size: 35px;
             text-transform: capitalize;
-
             padding: 5px;
         }
 
@@ -354,13 +266,10 @@ main {
             transform: scale(1.05);
         }
     }
-
-
-
 }
 
+// Links
 .lien {
-
     ul {
         display: flex;
         gap: 15px;
@@ -371,10 +280,10 @@ main {
             border: solid 1px $title-color;
             border-radius: 15px;
             padding: 10px;
-            background-color: #369046;
+            background-color: $accent-color-4;
 
             &:hover {
-                background-color: #1D3A24;
+                background-color: $accent-color-3;
             }
 
             a {
@@ -391,6 +300,7 @@ main {
     }
 }
 
+// Particles Background
 #particles-js {
     position: fixed;
     width: 100%;
@@ -398,10 +308,10 @@ main {
     z-index: -1;
 }
 
+// Footer
 footer {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    align-items: center;
     padding-block: 55px;
     margin: auto;
     gap: 15px;
@@ -411,38 +321,35 @@ footer {
         font-weight: 500;
         font-style: italic;
 
-        @media only screen and (max-width: 458px) {
+        @include media-query(458px) {
             font-size: 100%;
-
         }
     }
 
     .perso {
         width: 155px;
-
     }
-
 }
 
+// Project Image
 .imgProjet {
-    width: 100%;
-    height: 100%;
-    border-radius: 5px;
+    width: 95%;
+    height: 95%;
+    border-radius: 10px;
 
-    @media only screen and (max-width: 652px) {
+    @include media-query(652px) {
         width: 100%;
         height: 100%;
-
     }
-
 }
 
+// Skills
 .skills {
     display: flex;
     gap: 10px;
     padding: 25px;
 
-    @media only screen and (max-width: 652px) {
+    @include media-query(652px) {
         flex-direction: column;
         gap: 20px;
         padding-bottom: 25px;
@@ -450,12 +357,11 @@ footer {
 }
 
 .flex-item {
-    display: flex;
+    @include flex-center;
     border: 1px solid greenyellow;
     border-radius: 15px;
-    background-color: #1D3A24;    
+    background-color: $accent-color-3;
     z-index: 2;
-
 
     .fa-brands {
         font-size: 35px;
@@ -467,23 +373,19 @@ footer {
     p {
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding: 10px;
-
     }
 
     h3 {
         font-size: 25px;
         text-transform: capitalize;
-
         margin: auto;
         font-family: 'Courier New', Courier, monospace;
         padding: 15px;
     }
-
-
 }
 
 .flex-item:hover {
-    background-color: #369046;
+    background-color: $accent-color-4;
 }
 
 .techno {
@@ -493,7 +395,7 @@ footer {
     border-radius: 8px;
     padding: 5px;
     margin: 5px;
-    background-color: #215E30;
+    background-color: $accent-color-5;
 }
 
 .contenu {

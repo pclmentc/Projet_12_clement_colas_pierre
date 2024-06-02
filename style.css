@@ -1,9 +1,61 @@
-@charset "UTF-8";
 @keyframes blink {
   50% {
     opacity: 0;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+* article,
+* aside,
+* details,
+* figcaption,
+* figure,
+* footer,
+* header,
+* hgroup,
+* menu,
+* nav,
+* section {
+  display: block;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  line-height: 1;
+  background-color: #141A15;
+  color: white;
+  width: 100%;
+  margin: 0;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .date {
   border: 1px solid;
   border-radius: 15px;
@@ -14,141 +66,6 @@
   position: relative;
   top: -3px;
   right: -10px;
-}
-
-/* Reset */
-* {
-  /* Réinitialisation du rôle d'affichage HTML5 pour les anciens navigateurs */
-}
-* * html,
-* * body,
-* * div,
-* * span,
-* * applet,
-* * object,
-* * iframe,
-* * h1,
-* * h2,
-* * h3,
-* * h4,
-* * h5,
-* * h6,
-* * p,
-* * blockquote,
-* * pre,
-* * a,
-* * abbr,
-* * acronym,
-* * address,
-* * big,
-* * cite,
-* * code,
-* * del,
-* * dfn,
-* * em,
-* * img,
-* * ins,
-* * kbd,
-* * q,
-* * s,
-* * samp,
-* * small,
-* * strike,
-* * strong,
-* * sub,
-* * sup,
-* * tt,
-* * var,
-* * b,
-* * u,
-* * i,
-* * center,
-* * dl,
-* * dt,
-* * dd,
-* * ol,
-* * ul,
-* * li,
-* * fieldset,
-* * form,
-* * label,
-* * legend,
-* * table,
-* * caption,
-* * tbody,
-* * tfoot,
-* * thead,
-* * tr,
-* * th,
-* * td,
-* * article,
-* * aside,
-* * canvas,
-* * details,
-* * embed,
-* * figure,
-* * figcaption,
-* * footer,
-* * header,
-* * hgroup,
-* * menu,
-* * nav,
-* * output,
-* * ruby,
-* * section,
-* * summary,
-* * time,
-* * mark,
-* * audio,
-* * video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
-* * article,
-* * aside,
-* * details,
-* * figcaption,
-* * figure,
-* * footer,
-* * header,
-* * hgroup,
-* * menu,
-* * nav,
-* * section {
-  display: block;
-}
-* body {
-  /* Google Fonts */
-  font-family: "League Spartan", sans-serif;
-  line-height: 1;
-  background-color: #141A15;
-  color: white;
-  width: 100%;
-  margin: 0;
-}
-* ol,
-* ul {
-  list-style: none;
-}
-* blockquote,
-* q {
-  quotes: none;
-}
-* blockquote:before,
-* blockquote:after,
-* q:before,
-* q:after {
-  content: "";
-  content: none;
-}
-* table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 nav {
@@ -204,9 +121,9 @@ nav ul li .fa-solid {
 
 .Presentation {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 35px;
 }
 .Presentation .effet {
@@ -222,6 +139,7 @@ nav ul li .fa-solid {
 .Navigation {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 35px;
 }
 
@@ -278,7 +196,8 @@ main .Projets {
 @media only screen and (max-width: 1423px) {
   main .Projets {
     flex-direction: column;
-    gap: 10px;
+    width: 90%;
+    gap: 25px;
   }
 }
 main .projet-1,
@@ -350,8 +269,9 @@ main .projet-3:hover {
 
 footer {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding-block: 55px;
   margin: auto;
   gap: 15px;
@@ -371,9 +291,9 @@ footer .perso {
 }
 
 .imgProjet {
-  width: 100%;
-  height: 100%;
-  border-radius: 5px;
+  width: 95%;
+  height: 95%;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 652px) {
   .imgProjet {
@@ -397,6 +317,8 @@ footer .perso {
 
 .flex-item {
   display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid greenyellow;
   border-radius: 15px;
   background-color: #1D3A24;
