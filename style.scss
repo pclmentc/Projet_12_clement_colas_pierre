@@ -151,7 +151,13 @@ nav {
 
 // Presentation
 .Portrait {
-    width: 365px;
+    width: 25%;
+    @include media-query(850px) {
+        width: 35%;
+    }
+    @include media-query(350px) {
+        width: 45%;
+    }
 }
 
 .Presentation {
