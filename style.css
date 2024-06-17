@@ -231,6 +231,13 @@ main .projet-3 {
     width: 100%;
   }
 }
+main .projet-1 .lien,
+main .projet-2 .lien,
+main .projet-3 .lien {
+  color: white;
+  text-decoration: none;
+  border: none;
+}
 main .projet-1 h3,
 main .projet-2 h3,
 main .projet-3 h3 {

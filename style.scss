@@ -260,6 +260,11 @@ main {
         @include media-query(1423px) {
             width: 100%;
         }
+        .lien{            
+            color: white;
+            text-decoration:none;
+            border: none;
+        }
 
         h3 {
             font-size: 35px;
